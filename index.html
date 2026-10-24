@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Retail store sales analysis{% endblock %}
+{% block public_content %}
+<div class="landing-page">
+  <nav class="landing-nav">
+    <a class="brand" href="{{ url_for('index') }}"><span class="brand-mark">R</span><span><strong>RetailIQ</strong><small>Store intelligence</small></span></a>
+    <div class="landing-links"><a href="#how-it-works">How it works</a><a href="#features">Features</a><a class="button button-small button-outline" href="{{ url_for('login') }}">Log in</a></div>
+  </nav>
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow-pill"><span class="pulse-dot"></span> Practical analytics for everyday retail</div>
+      <h1>Know what is selling.<br><em>Run your store better.</em></h1>
+      <p>RetailIQ brings products, stock, sales and simple business analysis together in one calm workspace built for small store teams and student projects.</p>
+      <div class="hero-actions"><a class="button button-primary" href="{{ url_for('signup') }}">Create your workspace <span>→</span></a><a class="text-link" href="{{ url_for('login') }}">Already have an account? Log in</a></div>
+      <div class="hero-proof"><div class="proof-avatars"><span>AV</span><span>RK</span><span>MS</span></div><span>Built for clear decisions, not busywork.</span></div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-glow"></div>
+      <div class="mini-dashboard">
+        <div class="mini-top"><span class="mini-brand"><i>R</i> RetailIQ</span><span class="mini-window">•••</span></div>
+        <div class="mini-welcome">Good morning, store owner <span>✦</span></div>
+        <div class="mini-subtitle">Here’s the pulse of your store today.</div>
+        <div class="mini-kpis"><div><small>Sales this month</small><strong>₹86,420</strong><b>+12.8%</b></div><div><small>Items sold</small><strong>1,284</strong><b>+8.4%</b></div></div>
+        <div class="mini-chart"><div class="chart-label"><strong>Sales trend</strong><span>Last 6 months</span></div><svg viewBox="0 0 420 125" role="img" aria-label="Sales trend illustration"><path d="M10 103 C42 93 54 97 76 75 S120 86 145 61 S182 71 210 45 S251 62 273 33 S312 48 336 23 S382 35 410 9" fill="none" stroke="#2b8994" stroke-width="4" stroke-linecap="round"/><path d="M10 103 C42 93 54 97 76 75 S120 86 145 61 S182 71 210 45 S251 62 273 33 S312 48 336 23 S382 35 410 9 L410 125 L10 125Z" fill="url(#area)" opacity=".5"/><defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5bb7ae"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs></svg><div class="chart-months"><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span></div></div>
+        <div class="mini-bottom"><div><small>Low stock</small><strong>04 products</strong></div><span class="mini-alert">Review now →</span></div>
+      </div>
+      <div class="floating-note"><span>↗</span><div><strong>+18.6%</strong><small>Revenue growth</small></div></div>
+    </div>
+  </section>
+  <section class="landing-strip" id="features"><div><span class="strip-number">01</span><strong>Live inventory</strong><small>Always know what needs attention.</small></div><div><span class="strip-number">02</span><strong>Simple analysis</strong><small>See trends without complex tools.</small></div><div><span class="strip-number">03</span><strong>College-ready</strong><small>Easy to explain in a viva.</small></div></section>
+  <section class="how-section" id="how-it-works"><div class="section-kicker">WHY RETAILIQ</div><h2>Make every number<br>useful.</h2><p>From your first product entry to your next stock decision, the important details stay connected and understandable.</p><div class="step-grid"><div><span>01</span><h3>Add your products</h3><p>Keep prices, categories, current stock and reorder levels in one place.</p></div><div><span>02</span><h3>Record each sale</h3><p>Stock reduces automatically and the sale becomes part of your history.</p></div><div><span>03</span><h3>Read the pattern</h3><p>Use live charts and summaries to spot your best products and quiet months.</p></div></div></section>
+  <footer class="landing-footer"><span>RetailIQ · Retail store sales analysis</span><span>Simple tools. Better store decisions.</span></footer>
+</div>
+{% endblock %}

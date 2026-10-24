@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block title %}{{ code }} error{% endblock %}
+{% block content %}
+<div class="error-page"><span class="error-code">{{ code }}</span><h1>{{ message }}</h1><p>Return to a page you know or continue from the dashboard.</p><a class="button button-primary" href="{{ url_for('dashboard') if current_user else url_for('index') }}">Go back <span>→</span></a></div>
+{% endblock %}
